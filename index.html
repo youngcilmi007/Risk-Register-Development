@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ricks Register</title>
+    <style>
+        /* CSS STYLES (inside <style> tag) */
+        body { 
+            font-family: Arial; 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        button { 
+            padding: 5px 10px; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+    </style>
+</head>
+<body>
+    <h1>My Item Tracker</h1>
+    <input type="text" id="itemInput" placeholder="Add item">
+    <button onclick="addItem()">Add</button>
+    <ul id="itemList"></ul>
+
+    <script>
+        /* JAVASCRIPT (inside <script> tag) */
+        function addItem() {
+            const input = document.getElementById("itemInput");
+            const item = input.value;
+            if (item) {
+                const list = document.getElementById("itemList");
+                const li = document.createElement("li");
+                li.textContent = item;
+                list.appendChild(li);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
