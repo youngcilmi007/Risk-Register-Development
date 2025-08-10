@@ -19,3 +19,11 @@ This project aims to create a comprehensive risk register that will help identif
 
 ## License
 [Insert license information here]
+# Ricks Register
+
+A simple all-in-one item tracker.
+
+## How to Use
+1. Download `index.html`
+2. Open it in any web browser
+3. Type items and click "Add"
